@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿// https://community.topcoder.com/stat?c=problem_statement&pm=3118
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
 {
@@ -45,21 +47,21 @@ namespace TopCoder
         [TestMethod]
         public void HealthFoodTest()
         {
-            this.HealthFoodTest(
+            HealthFoodTestClass.HealthFoodTest(
                 new int[] { 3, 4 },
                 new int[] { 2, 8 },
                 new int[] { 5, 2 },
                 new string[] { "P", "p", "C", "c", "F", "f", "T", "t" },
                 new int[] { 1, 0, 1, 0, 0, 1, 1, 0 });
 
-            this.HealthFoodTest(
+            HealthFoodTestClass.HealthFoodTest(
                 new int[] { 3, 4, 1, 5 },
                 new int[] { 2, 8, 5, 1 },
                 new int[] { 5, 2, 4, 4 },
                 new string[] { "tFc", "tF", "Ftc" },
                 new int[] { 3, 2, 0 });
 
-            this.HealthFoodTest(
+            HealthFoodTestClass.HealthFoodTest(
                 new int[] { 18, 86, 76, 0, 34, 30, 95, 12, 21 },
                 new int[] { 26, 56, 3, 45, 88, 0, 10, 27, 53 },
                 new int[] { 93, 96, 13, 95, 98, 18, 59, 49, 86 },
@@ -67,7 +69,7 @@ namespace TopCoder
                 new int[] { 2, 6, 6, 2, 4, 4, 5, 0, 5, 5, 6, 6, 3, 5, 6 });
         }
 
-        private void HealthFoodTest(int[] protein, int[] carbs, int[] fat, string[] dietPlans, int[] expected)
+        private static void HealthFoodTest(int[] protein, int[] carbs, int[] fat, string[] dietPlans, int[] expected)
         {
             HealthFood healthFood = new HealthFood();
             int[] results = healthFood.selectMeals(protein, carbs, fat, dietPlans);

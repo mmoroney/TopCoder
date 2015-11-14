@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿// https://community.topcoder.com/stat?c=problem_statement&pm=7544
+
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
@@ -44,13 +46,28 @@ namespace TopCoder
         [TestMethod]
         public void SortMaterialsTest()
         {
-            SortMaterialsTest(new string[] { "1 20 red", "2 30 blue", "10 1 green" }, new string[] { }, 1009);
-            SortMaterialsTest(new string[] { "1 20 red", "2 30 blue", "10 1 green" }, new string[] { "QUALITY=20" }, 9);
-            SortMaterialsTest(new string[] { "1 20 red", "2 30 blue", "10 1 green", "5 5 red", "5 6 red" }, new string[] { "COLOR=red", "EDGE=5" }, 250);
-            SortMaterialsTest(new string[] { "1 20 red", "2 30 blue", "10 1 green", "5 5 red", "5 6 red" }, new string[] { "EDGE=1", "EDGE=5" }, 0);
+            SortMaterialsTestClass.SortMaterialsTest(
+                new string[] { "1 20 red", "2 30 blue", "10 1 green" },
+                new string[] { },
+                1009);
+
+            SortMaterialsTestClass.SortMaterialsTest(
+                new string[] { "1 20 red", "2 30 blue", "10 1 green" },
+                new string[] { "QUALITY=20" },
+                9);
+
+            SortMaterialsTestClass.SortMaterialsTest(
+                new string[] { "1 20 red", "2 30 blue", "10 1 green", "5 5 red", "5 6 red" },
+                new string[] { "COLOR=red", "EDGE=5" },
+                250);
+
+            SortMaterialsTestClass.SortMaterialsTest(
+                new string[] { "1 20 red", "2 30 blue", "10 1 green", "5 5 red", "5 6 red" },
+                new string[] { "EDGE=1", "EDGE=5" },
+                0);
         }
 
-        private void SortMaterialsTest(string[] data, string[] requirements, int expected)
+        private static void SortMaterialsTest(string[] data, string[] requirements, int expected)
         {
             SortMaterials sortMaterials = new SortMaterials();
             Assert.AreEqual(expected, sortMaterials.totalVolume(data, requirements));
