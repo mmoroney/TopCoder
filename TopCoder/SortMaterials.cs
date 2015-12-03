@@ -32,7 +32,6 @@ namespace TopCoder
                     case "COLOR":
                     default:
                         return s.Color == t.Value;
-
                 }
             }));
 
