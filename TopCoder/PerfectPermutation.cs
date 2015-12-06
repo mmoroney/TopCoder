@@ -19,12 +19,11 @@ namespace TopCoder
                 cycles++;
 
                 int j = i;
-                do
+                while (!visited[j])
                 {
                     visited[j] = true;
                     j = P[j];
                 }
-                while (!visited[j]);
             }
 
             return (cycles == 1) ? 0 : cycles;
