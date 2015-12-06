@@ -57,6 +57,7 @@
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
     <Compile Include="HealthFood.cs" />
+    <Compile Include="PerfectPermutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortMaterials.cs" />
   </ItemGroup>
