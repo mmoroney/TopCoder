@@ -58,6 +58,7 @@
     <Compile Include="ElevatorLimit.cs" />
     <Compile Include="HealthFood.cs" />
     <Compile Include="PerfectPermutation.cs" />
+    <Compile Include="ProblemSets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedSquare.cs" />
     <Compile Include="SortMaterials.cs" />
