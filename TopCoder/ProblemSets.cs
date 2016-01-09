@@ -12,11 +12,11 @@ namespace TopCoder
             long low = 0;
             long high = E + EM + 1;
 
-            while(low + 1 < high)
+            while (low + 1 < high)
             {
                 long middle = low + (high - low) / 2;
 
-                if(ProblemSets.IsCandidate(middle, E, EM,M, MH, H))
+                if (ProblemSets.IsCandidate(middle, E, EM, M, MH, H))
                     low = middle;
                 else
                     high = middle;
