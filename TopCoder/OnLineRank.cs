@@ -1,7 +1,6 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=2264
 
 using System;
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
@@ -10,7 +9,18 @@ namespace TopCoder
     {
         public int calcRanks(int k, int[] scores)
         {
-            return scores.Length + Enumerable.Range(0, scores.Length).Sum(i => Enumerable.Range(Math.Max(0, i - k), Math.Min(i, k)).Count(j => scores[j] > scores[i]));
+            int sum = scores.Length;
+
+            for(int i = 0; i < scores.Length; i++)
+            {
+                for (int j = Math.Max(0, i - k); j < i; j++)
+                {
+                    if (scores[j] > scores[i])
+                        sum++;
+                }
+            }
+
+            return sum;
         }
     }
 

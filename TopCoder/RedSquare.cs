@@ -1,6 +1,5 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=2891&rd=5073
 
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
@@ -9,7 +8,15 @@ namespace TopCoder
     {
         public int countTheEmptyReds(int maxRank, int maxFile, int[] rank, int[] file)
         {
-            return maxRank * maxFile / 2 - Enumerable.Range(0, rank.Length).Count(i => (rank[i] + file[i]) % 2 == maxFile % 2);
+            int count = maxRank * maxFile / 2;
+
+            for(int i = 0; i < rank.Length; i++)
+            {
+                if ((rank[i] + file[i]) % 2 == maxFile % 2)
+                    count--;
+            }
+
+            return count;
         }
     }
 

@@ -1,7 +1,6 @@
 ﻿// http://suhendry.net/blog/wp-content/uploads/2007/11/squaresinsidelattice.html
 
 using System;
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
@@ -10,7 +9,12 @@ namespace TopCoder
     {
         public long howMany(int width, int height)
         {
-            return Enumerable.Range(1, Math.Min(width, height)).Sum(i => (width - i + 1) * (height - i + 1) * i);
+            int sum = 0;
+
+            for (int i = 1; i <= Math.Min(width, height); i++)
+                sum += (width - i + 1) * (height - i + 1) * i;
+
+            return sum;
         }
     }
 
