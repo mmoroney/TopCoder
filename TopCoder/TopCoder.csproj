@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BaseMystery.cs" />
     <Compile Include="BigFatInteger2.cs" />
     <Compile Include="CaptureThemAll.cs" />
     <Compile Include="Education.cs" />
