@@ -63,6 +63,7 @@
     <Compile Include="ProblemSets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedSquare.cs" />
+    <Compile Include="SequenceOfCommands.cs" />
     <Compile Include="SortMaterials.cs" />
     <Compile Include="SquaresInsideLattice.cs" />
   </ItemGroup>
