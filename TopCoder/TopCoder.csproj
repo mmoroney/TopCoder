@@ -61,6 +61,7 @@
     <Compile Include="ElevatorLimit.cs" />
     <Compile Include="FoxAndClassroom.cs" />
     <Compile Include="HealthFood.cs" />
+    <Compile Include="LargestSubsequence.cs" />
     <Compile Include="MirroredClock.cs" />
     <Compile Include="OnLineRank.cs" />
     <Compile Include="OnTheFarmDivTwo.cs" />
