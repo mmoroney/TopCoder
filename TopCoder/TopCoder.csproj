@@ -60,6 +60,7 @@
     <Compile Include="HealthFood.cs" />
     <Compile Include="OnLineRank.cs" />
     <Compile Include="OnTheFarmDivTwo.cs" />
+    <Compile Include="OrthogonalAnagram.cs" />
     <Compile Include="PaperFold.cs" />
     <Compile Include="PerfectPermutation.cs" />
     <Compile Include="PrintScheduler.cs" />
