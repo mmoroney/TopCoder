@@ -3,7 +3,6 @@
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
 namespace TopCoder
 {
     public class PrintScheduler

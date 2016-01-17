@@ -1,8 +1,6 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=11513
 
-using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 
 namespace TopCoder
 {
@@ -14,24 +12,22 @@ namespace TopCoder
             foreach (char c in S)
                 counts[c - 'a']++;
 
-            StringBuilder sb = new StringBuilder();
+            char[] result = new char[S.Length];
+
             for(int i = 0; i < S.Length; i++)
             {
-                for(int j = 0; j < counts.Length; j++)
-                {
-                    if(counts[j] > 0 && S[i] - 'a' != j)
-                    {
-                        sb.Append((char)('a' + j));
-                        counts[j]--;
-                        break;
-                    }
-                }
+                int j = 0;
+                while (j < counts.Length && (counts[j] == 0 || j == S[i] - 'a'))
+                    j++;
 
-                if (sb.Length < i)
+                if (j == counts.Length)
                     return string.Empty;
+
+                result[i] = (char)('a' + j);
+                counts[j]--;
             }
 
-            return sb.ToString();
+            return new string(result);
         }
     }
 

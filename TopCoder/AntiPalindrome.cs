@@ -2,7 +2,6 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
 namespace TopCoder
 {
     public class AntiPalindrome
@@ -18,10 +17,10 @@ namespace TopCoder
             for(int i = 0; i < s.Length; i++)
             {
                 int j = 0;
-                while (j < 26 && (counts[j] == 0 || j == result[result.Length - i - 1] - 'a'))
+                while (j < counts.Length && (counts[j] == 0 || j == result[result.Length - i - 1] - 'a'))
                     j++;
 
-                if (j == 26)
+                if (j == counts.Length)
                     return string.Empty;
 
                 result[i] = (char)(j + 'a');
