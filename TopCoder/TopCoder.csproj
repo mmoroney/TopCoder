@@ -59,6 +59,7 @@
     <Compile Include="CaptureThemAll.cs" />
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
+    <Compile Include="FoxAndClassroom.cs" />
     <Compile Include="HealthFood.cs" />
     <Compile Include="MirroredClock.cs" />
     <Compile Include="OnLineRank.cs" />
