@@ -58,6 +58,7 @@
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
     <Compile Include="HealthFood.cs" />
+    <Compile Include="MirroredClock.cs" />
     <Compile Include="OnLineRank.cs" />
     <Compile Include="OnTheFarmDivTwo.cs" />
     <Compile Include="OrthogonalAnagram.cs" />
