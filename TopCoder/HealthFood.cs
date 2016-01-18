@@ -73,6 +73,7 @@ namespace TopCoder
         {
             HealthFood healthFood = new HealthFood();
             int[] results = healthFood.selectMeals(protein, carbs, fat, dietPlans);
+            Assert.AreEqual(expected.Length, results.Length);
             for (int i = 0; i < results.Length; i++)
                 Assert.AreEqual(expected[i], results[i]);
         }

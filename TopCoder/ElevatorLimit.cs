@@ -83,6 +83,7 @@ namespace TopCoder
         {
             ElevatorLimit elevatorLimit = new ElevatorLimit();
             int[] results = elevatorLimit.getRange(enter, exit, physicalLimit);
+            Assert.AreEqual(expected.Length, results.Length);
             for (int i = 0; i < results.Length; i++)
                 Assert.AreEqual(expected[i], results[i]);
         }
