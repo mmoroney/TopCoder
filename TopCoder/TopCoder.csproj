@@ -60,6 +60,7 @@
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
     <Compile Include="FoxAndClassroom.cs" />
+    <Compile Include="Generators.cs" />
     <Compile Include="HealthFood.cs" />
     <Compile Include="LargestSubsequence.cs" />
     <Compile Include="MirroredClock.cs" />
