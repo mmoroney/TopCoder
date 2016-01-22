@@ -63,6 +63,7 @@
     <Compile Include="Generators.cs" />
     <Compile Include="HealthFood.cs" />
     <Compile Include="LargestSubsequence.cs" />
+    <Compile Include="MaxMinTreeGame.cs" />
     <Compile Include="MirroredClock.cs" />
     <Compile Include="OnLineRank.cs" />
     <Compile Include="OnTheFarmDivTwo.cs" />
