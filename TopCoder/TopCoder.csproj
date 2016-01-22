@@ -70,6 +70,7 @@
     <Compile Include="OrthogonalAnagram.cs" />
     <Compile Include="PaperFold.cs" />
     <Compile Include="PerfectPermutation.cs" />
+    <Compile Include="PlayGame.cs" />
     <Compile Include="PrintScheduler.cs" />
     <Compile Include="ProblemSets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
