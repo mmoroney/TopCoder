@@ -14,26 +14,15 @@ namespace TopCoder
 
             while (low + 1 < high)
             {
-                long middle = low + (high - low) / 2;
+                long mid = low + (high - low) / 2;
 
-                if (ProblemSets.IsCandidate(middle, E, EM, M, MH, H))
-                    low = middle;
+                if (E + EM >= mid && MH + H >= mid && M + EM + MH - Math.Max(0, mid - E) - Math.Max(0, mid - H) >= mid)
+                    low = mid;
                 else
-                    high = middle;
+                    high = mid;
             }
 
             return low;
-        }
-
-        private static bool IsCandidate(long n, long E, long EM, long M, long MH, long H)
-        {
-            if (E + EM < n || MH + H < n)
-                return false;
-
-            EM -= Math.Max(0, n - E);
-            MH -= Math.Max(0, n - H);
-
-            return M + EM + MH >= n;
         }
     }
 
