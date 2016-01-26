@@ -1,4 +1,4 @@
-﻿// https://community.topcoder.com/tc?module=Static&d1=help&d2=sampleProblems
+﻿// https://community.topcoder.com/stat?c=problem_statement&pm=12190
 
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
