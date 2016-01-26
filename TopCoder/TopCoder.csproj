@@ -63,6 +63,7 @@
     <Compile Include="EasyConversionMachine.cs" />
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
+    <Compile Include="FindTriangle.cs" />
     <Compile Include="FoxAndClassroom.cs" />
     <Compile Include="Generators.cs" />
     <Compile Include="HealthFood.cs" />
