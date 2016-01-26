@@ -59,6 +59,7 @@
     <Compile Include="BigFatInteger2.cs" />
     <Compile Include="BitFlipper.cs" />
     <Compile Include="CaptureThemAll.cs" />
+    <Compile Include="ChocolateBar.cs" />
     <Compile Include="EasyConversionMachine.cs" />
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
