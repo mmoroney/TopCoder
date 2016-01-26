@@ -85,6 +85,7 @@
     <Compile Include="SequenceOfCommands.cs" />
     <Compile Include="SortMaterials.cs" />
     <Compile Include="SquaresInsideLattice.cs" />
+    <Compile Include="TheEncryptionDivTwo.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
