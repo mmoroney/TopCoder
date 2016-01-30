@@ -12,7 +12,7 @@ namespace TopCoder
             int i = (int)Math.Sqrt(n - 1);
 
             int result = i * i + 1;
-            if (n > result + i)
+            if (n >= result + i)
                 result += i;
 
             return result;
