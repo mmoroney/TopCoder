@@ -88,6 +88,7 @@
     <Compile Include="SortMaterials.cs" />
     <Compile Include="SquaresInsideLattice.cs" />
     <Compile Include="TheEncryptionDivTwo.cs" />
+    <Compile Include="Trainyard.cs" />
     <Compile Include="WakingUpEasy.cs" />
   </ItemGroup>
   <Choose>
