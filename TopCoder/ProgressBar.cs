@@ -18,11 +18,8 @@ namespace TopCoder
             for (int i = tasksCompleted; i < taskTimes.Length; i++)
                 total += taskTimes[i];
 
-            char[] progressBar = new char[20];
-
-            int progressCount = progressBar.Length * complete / total;
-
-            return new string('#', progressCount) + new string('.', progressBar.Length - progressCount);
+            int progressCount = 20 * complete / total;
+            return new string('#', progressCount) + new string('.', 20 - progressCount);
         }
     }
 
