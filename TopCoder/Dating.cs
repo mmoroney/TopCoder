@@ -1,7 +1,5 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=4514
 
-using System;
-using System.Collections.Generic;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
