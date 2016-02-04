@@ -73,6 +73,7 @@
     <Compile Include="LargestSubsequence.cs" />
     <Compile Include="MagicCandy.cs" />
     <Compile Include="MaxMinTreeGame.cs" />
+    <Compile Include="MinCostPalindrome.cs" />
     <Compile Include="MirroredClock.cs" />
     <Compile Include="OnLineRank.cs" />
     <Compile Include="OnTheFarmDivTwo.cs" />
