@@ -14,7 +14,7 @@ namespace TopCoder
                 int i = "23456789TJQKA".IndexOf(s[0]);
                 if (i < 8)
                     return i + 2;
-                if (i <= 11)
+                if (i < 12)
                     return 10;
                 return 11;
             });
