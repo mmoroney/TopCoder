@@ -96,6 +96,7 @@
     <Compile Include="TheBlackJackDivTwo.cs" />
     <Compile Include="TheEncryptionDivTwo.cs" />
     <Compile Include="Trainyard.cs" />
+    <Compile Include="Trekking.cs" />
     <Compile Include="TxMsg.cs" />
     <Compile Include="WakingUpEasy.cs" />
   </ItemGroup>
