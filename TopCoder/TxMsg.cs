@@ -9,10 +9,9 @@ namespace TopCoder
     {
         public string getMessage(string original)
         {
-            string[] words = original.Split(' ');
             StringBuilder sb = new StringBuilder();
 
-            foreach (string word in words)
+            foreach (string word in original.Split(' '))
             {
                 if (sb.Length > 0)
                     sb.Append(' ');
