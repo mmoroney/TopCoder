@@ -77,6 +77,7 @@
     <Compile Include="MaxMinTreeGame.cs" />
     <Compile Include="MinCostPalindrome.cs" />
     <Compile Include="MirroredClock.cs" />
+    <Compile Include="NounReform.cs" />
     <Compile Include="OnLineRank.cs" />
     <Compile Include="OnTheFarmDivTwo.cs" />
     <Compile Include="OrthogonalAnagram.cs" />
