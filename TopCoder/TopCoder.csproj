@@ -101,6 +101,7 @@
     <Compile Include="Trekking.cs" />
     <Compile Include="TxMsg.cs" />
     <Compile Include="WakingUpEasy.cs" />
+    <Compile Include="WolfDelayMaster.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
