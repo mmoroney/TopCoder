@@ -96,6 +96,7 @@
     <Compile Include="SequenceOfCommands.cs" />
     <Compile Include="SortMaterials.cs" />
     <Compile Include="SquaresInsideLattice.cs" />
+    <Compile Include="SumOfPerfectPowers.cs" />
     <Compile Include="TheBlackJackDivTwo.cs" />
     <Compile Include="TheEncryptionDivTwo.cs" />
     <Compile Include="Trainyard.cs" />
