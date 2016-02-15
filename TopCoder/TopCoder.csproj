@@ -71,6 +71,7 @@
     <Compile Include="FindTriangle.cs" />
     <Compile Include="FoxAndClassroom.cs" />
     <Compile Include="Generators.cs" />
+    <Compile Include="grafixMask.cs" />
     <Compile Include="HealthFood.cs" />
     <Compile Include="LargestSubsequence.cs" />
     <Compile Include="MagicCandy.cs" />
