@@ -60,6 +60,7 @@
     <Compile Include="BigFatInteger2.cs" />
     <Compile Include="BitFlipper.cs" />
     <Compile Include="BusinessTasks.cs" />
+    <Compile Include="BuyingTShirts.cs" />
     <Compile Include="CaptureThemAll.cs" />
     <Compile Include="ChocolateBar.cs" />
     <Compile Include="CircleGame.cs" />
