@@ -106,6 +106,7 @@
     <Compile Include="TxMsg.cs" />
     <Compile Include="WakingUpEasy.cs" />
     <Compile Include="WolfDelayMaster.cs" />
+    <Compile Include="XorBoardDivTwo.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
