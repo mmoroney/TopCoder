@@ -74,6 +74,7 @@
     <Compile Include="Generators.cs" />
     <Compile Include="grafixMask.cs" />
     <Compile Include="HealthFood.cs" />
+    <Compile Include="Hotel.cs" />
     <Compile Include="LargestSubsequence.cs" />
     <Compile Include="MagicCandy.cs" />
     <Compile Include="MaxMinTreeGame.cs" />
