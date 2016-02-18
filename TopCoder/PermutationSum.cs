@@ -1,4 +1,4 @@
-﻿// https://community.topcoder.com/stat?c=problem_statement&pm=13585&rd=16648
+﻿// no hyperlink available
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
