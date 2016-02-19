@@ -76,6 +76,7 @@
     <Compile Include="HealthFood.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="LargestSubsequence.cs" />
+    <Compile Include="ListeningIn.cs" />
     <Compile Include="MagicCandy.cs" />
     <Compile Include="MaxMinTreeGame.cs" />
     <Compile Include="MinCostPalindrome.cs" />
