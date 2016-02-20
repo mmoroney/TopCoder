@@ -1,5 +1,6 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=4670
 
+using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
@@ -8,7 +9,7 @@ namespace TopCoder
     {
         public string probableMatch(string typed, string phrase)
         {
-            string result = string.Empty;
+           StringBuilder sb = new StringBuilder();
             int i = 0;
 
             foreach(char c in phrase)
@@ -16,13 +17,13 @@ namespace TopCoder
                 if (i < typed.Length && typed[i] == c)
                     i++;
                 else
-                    result += c;//.Append(c);
+                    sb.Append(c);
             }
 
             if (i < typed.Length)
                 return "UNMATCHED";
 
-            return result;
+            return sb.ToString();
         }
     }
 
