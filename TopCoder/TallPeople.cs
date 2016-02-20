@@ -1,6 +1,5 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=2923
 
-using System;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
