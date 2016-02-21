@@ -72,6 +72,7 @@
     <Compile Include="FarFromPrimes.cs" />
     <Compile Include="FindTriangle.cs" />
     <Compile Include="FoxAndClassroom.cs" />
+    <Compile Include="FryingHamburgers.cs" />
     <Compile Include="Generators.cs" />
     <Compile Include="grafixMask.cs" />
     <Compile Include="HealthFood.cs" />
