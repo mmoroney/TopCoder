@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AccessChanger.cs" />
     <Compile Include="ANewHope.cs" />
     <Compile Include="AntiPalindrome.cs" />
     <Compile Include="ArithmeticProgression.cs" />
