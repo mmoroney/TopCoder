@@ -56,6 +56,7 @@
     <Compile Include="ANewHope.cs" />
     <Compile Include="AntiPalindrome.cs" />
     <Compile Include="ArithmeticProgression.cs" />
+    <Compile Include="ArtShift.cs" />
     <Compile Include="ATaleOfThreeCities.cs" />
     <Compile Include="BaseMystery.cs" />
     <Compile Include="BigFatInteger2.cs" />
