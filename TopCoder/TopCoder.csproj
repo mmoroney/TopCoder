@@ -82,6 +82,7 @@
     <Compile Include="LargestSubsequence.cs" />
     <Compile Include="ListeningIn.cs" />
     <Compile Include="MagicCandy.cs" />
+    <Compile Include="ManhattanMovement.cs" />
     <Compile Include="MaxMinTreeGame.cs" />
     <Compile Include="MinCostPalindrome.cs" />
     <Compile Include="MirroredClock.cs" />
