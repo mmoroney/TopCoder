@@ -11,12 +11,13 @@ namespace TopCoder
         {
             return cards.Sum(s =>
             {
-                int i = "23456789TJQKA".IndexOf(s[0]);
-                if (i < 8)
-                    return i + 2;
-                if (i < 12)
+                if (s[0] == 'A')
+                    return 11;
+
+                if ("KQJT".Contains(s[0]))
                     return 10;
-                return 11;
+
+                return s[0] - '2' + 2;
             });
         }
     }
