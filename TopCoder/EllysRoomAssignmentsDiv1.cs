@@ -12,49 +12,44 @@ namespace TopCoder
         public double getAverage(string[] ratings)
         {
             int[] parsedRatings = EllysRoomAssignmentDiv1.ParseRatings(ratings);
-            int totalCount = parsedRatings.Length;
-            int rooms = (totalCount - 1) / 20 + 1; 
+            int n = parsedRatings.Length;
+            int r = (n - 1) / 20 + 1; 
 
-            double regularSum = 0;
-            double leftoverSum = 0;
+            double s = 0;
+            double l = 0;
             int i = 0;
             bool foundElly = false;
 
-            foreach(int rating in parsedRatings.OrderByDescending(n => n))
+            foreach(int rating in parsedRatings.OrderByDescending(a => a))
             {
                 if(rating == parsedRatings[0])
                 {
                     foundElly = true;
-                    leftoverSum = parsedRatings[0] * i;
+                    l = parsedRatings[0] * i;
                 }
 
-                leftoverSum += foundElly ? parsedRatings[0] : rating;
+                l += foundElly ? parsedRatings[0] : rating;
                 i++;
 
-                if (i == rooms)
+                if (i == r)
                 {
                     foundElly = false;
-                    regularSum += leftoverSum;
-                    leftoverSum = 0;
+                    s += l;
+                    l = 0;
                     i = 0;
                 }
             }
 
-            int leftoverCount = parsedRatings.Length % rooms;
-            double averageForSmallerRoom = (double)regularSum / (totalCount - leftoverCount);
+            double avg1 = s / (n - i);
+            if (i == 0)
+                return avg1;
 
-            if (leftoverSum == 0)
-                return averageForSmallerRoom;
-
-            double averageLeftover = (double)leftoverSum / leftoverCount;
-            int minPeople = parsedRatings.Length / rooms;
-
-            double averageForLargerRoom = averageForSmallerRoom * minPeople / (minPeople + 1) + averageLeftover / (minPeople + 1);
+            double avg2 = (avg1 * (n / r)  + (l / i)) / ((n / r) + 1);
 
             if (foundElly)
-                return averageForLargerRoom;
+                return avg2;
 
-            return averageForLargerRoom * leftoverCount / rooms + averageForSmallerRoom * (rooms - leftoverCount) / rooms;
+            return (avg1 * (r - i) + avg2 * i) / r;
         }
 
         private static int[] ParseRatings(string[] ratings)
