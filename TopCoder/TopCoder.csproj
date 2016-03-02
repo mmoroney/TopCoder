@@ -111,6 +111,7 @@
     <Compile Include="TallPeople.cs" />
     <Compile Include="TheBlackJackDivTwo.cs" />
     <Compile Include="TheEncryptionDivTwo.cs" />
+    <Compile Include="ThirstyGroup.cs" />
     <Compile Include="Trainyard.cs" />
     <Compile Include="Trekking.cs" />
     <Compile Include="TxMsg.cs" />
