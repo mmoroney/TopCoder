@@ -45,7 +45,7 @@ namespace TopCoder
             {
                 int mid = low + (high - low) / 2;
 
-                if (capacities.Sum(i => WaterTaken(mid, i)) > availableWater)
+                if (ThirstyGroup.TotalWaterTaken(mid, capacities) > availableWater)
                     high = mid;
                 else
                     low = mid;
