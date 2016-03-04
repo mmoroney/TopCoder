@@ -94,6 +94,7 @@
     <Compile Include="OrthogonalAnagram.cs" />
     <Compile Include="Palindromize2.cs" />
     <Compile Include="PaperFold.cs" />
+    <Compile Include="PartSorting.cs" />
     <Compile Include="PerfectPermutation.cs" />
     <Compile Include="PermutationSum.cs" />
     <Compile Include="PlayGame.cs" />
