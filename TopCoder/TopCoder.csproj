@@ -67,6 +67,7 @@
     <Compile Include="CaptureThemAll.cs" />
     <Compile Include="ChocolateBar.cs" />
     <Compile Include="CircleGame.cs" />
+    <Compile Include="CmpdWords.cs" />
     <Compile Include="Dating.cs" />
     <Compile Include="EasyConversionMachine.cs" />
     <Compile Include="Education.cs" />
