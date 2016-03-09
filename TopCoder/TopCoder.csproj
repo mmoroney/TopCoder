@@ -113,6 +113,7 @@
     <Compile Include="SmartWordToy.cs" />
     <Compile Include="SortMaterials.cs" />
     <Compile Include="SquaresInsideLattice.cs" />
+    <Compile Include="SubrectanglesOfTable.cs" />
     <Compile Include="SumOfPerfectPowers.cs" />
     <Compile Include="TallPeople.cs" />
     <Compile Include="TheBlackJackDivTwo.cs" />
