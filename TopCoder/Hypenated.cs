@@ -8,7 +8,7 @@ namespace TopCoder
     {
         public double avgLength(string[] lines)
         {
-            int letterCount = 0;
+            double letterCount = 0;
             int wordCount = 0;
             bool inWord = false;
 
@@ -40,7 +40,7 @@ namespace TopCoder
                 }
             }
 
-            return ((double) letterCount) / wordCount;
+            return letterCount / wordCount;
         }
     }
 
