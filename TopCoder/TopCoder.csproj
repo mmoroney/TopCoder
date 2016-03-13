@@ -90,6 +90,7 @@
     <Compile Include="MaxMinTreeGame.cs" />
     <Compile Include="MinCostPalindrome.cs" />
     <Compile Include="MirroredClock.cs" />
+    <Compile Include="MNS.cs" />
     <Compile Include="NounReform.cs" />
     <Compile Include="OlympicsBroadcasting.cs" />
     <Compile Include="OnLineRank.cs" />
