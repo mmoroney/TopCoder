@@ -118,6 +118,7 @@
     <Compile Include="SumOfPerfectPowers.cs" />
     <Compile Include="TallPeople.cs" />
     <Compile Include="TheBlackJackDivTwo.cs" />
+    <Compile Include="TheCardShufflingDivTwo.cs" />
     <Compile Include="TheEncryptionDivTwo.cs" />
     <Compile Include="ThirstyGroup.cs" />
     <Compile Include="Trainyard.cs" />
