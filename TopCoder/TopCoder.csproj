@@ -101,6 +101,7 @@
     <Compile Include="PartSorting.cs" />
     <Compile Include="PerfectPermutation.cs" />
     <Compile Include="PermutationSum.cs" />
+    <Compile Include="Pillars.cs" />
     <Compile Include="PlayGame.cs" />
     <Compile Include="PrintScheduler.cs" />
     <Compile Include="ProblemSets.cs" />
