@@ -103,6 +103,7 @@
     <Compile Include="PermutationSum.cs" />
     <Compile Include="Pillars.cs" />
     <Compile Include="PlayGame.cs" />
+    <Compile Include="Popularity.cs" />
     <Compile Include="PrintScheduler.cs" />
     <Compile Include="ProblemSets.cs" />
     <Compile Include="ProgressBar.cs" />
