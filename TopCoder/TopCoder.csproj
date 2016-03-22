@@ -123,6 +123,7 @@
     <Compile Include="TheBlackJackDivTwo.cs" />
     <Compile Include="TheCardShufflingDivTwo.cs" />
     <Compile Include="TheEncryptionDivTwo.cs" />
+    <Compile Include="TheJackpotDivOne.cs" />
     <Compile Include="ThirstyGroup.cs" />
     <Compile Include="Trainyard.cs" />
     <Compile Include="Transform.cs" />
