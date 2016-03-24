@@ -84,6 +84,7 @@
     <Compile Include="Hotel.cs" />
     <Compile Include="Hypenated.cs" />
     <Compile Include="IndicatorMotionReverse.cs" />
+    <Compile Include="KnightCircuit.cs" />
     <Compile Include="LargestSubsequence.cs" />
     <Compile Include="ListeningIn.cs" />
     <Compile Include="MagicCandy.cs" />
