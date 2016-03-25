@@ -113,6 +113,7 @@
     <Compile Include="RaiseThisBarn.cs" />
     <Compile Include="RedSquare.cs" />
     <Compile Include="ReversedSum.cs" />
+    <Compile Include="RoughStrings.cs" />
     <Compile Include="SemiPerfectSquare.cs" />
     <Compile Include="SequenceOfCommands.cs" />
     <Compile Include="SmartWordToy.cs" />
