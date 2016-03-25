@@ -130,6 +130,7 @@
     <Compile Include="Trainyard.cs" />
     <Compile Include="Transform.cs" />
     <Compile Include="Trekking.cs" />
+    <Compile Include="TwoTurtledoves.cs" />
     <Compile Include="TxMsg.cs" />
     <Compile Include="WakingUpEasy.cs" />
     <Compile Include="WolfDelayMaster.cs" />
