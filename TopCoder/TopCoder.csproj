@@ -80,6 +80,7 @@
     <Compile Include="FryingHamburgers.cs" />
     <Compile Include="Generators.cs" />
     <Compile Include="grafixMask.cs" />
+    <Compile Include="GuessCard.cs" />
     <Compile Include="HealthFood.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="Hypenated.cs" />
