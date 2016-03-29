@@ -75,6 +75,7 @@
     <Compile Include="Education.cs" />
     <Compile Include="ElevatorLimit.cs" />
     <Compile Include="EllysRoomAssignmentsDiv1.cs" />
+    <Compile Include="EventOrder.cs" />
     <Compile Include="FarFromPrimes.cs" />
     <Compile Include="FindTriangle.cs" />
     <Compile Include="FoxAndClassroom.cs" />
