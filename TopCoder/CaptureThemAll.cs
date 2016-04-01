@@ -16,9 +16,11 @@ namespace TopCoder
             Pair rookPair = CaptureThemAll.MakePair(rook);
             Pair queenPair = CaptureThemAll.MakePair(queen);
 
-            int knightToRook = CaptureThemAll.GetShortestPath(knightPair, rookPair);
-            int knightToQueen = CaptureThemAll.GetShortestPath(knightPair, queenPair);
-            int rookToQueen = CaptureThemAll.GetShortestPath(rookPair, queenPair);
+            int[] steps = new int[] { -2, -1, 2, -1, -2, 1, 2, 1, -2 };
+
+            int knightToRook = CaptureThemAll.GetShortestPath(knightPair, rookPair, steps);
+            int knightToQueen = CaptureThemAll.GetShortestPath(knightPair, queenPair, steps);
+            int rookToQueen = CaptureThemAll.GetShortestPath(rookPair, queenPair, steps);
 
             return Math.Min(knightToRook, knightToQueen) + rookToQueen;
         }
@@ -29,24 +31,12 @@ namespace TopCoder
             public int Y { get; set; }
         }
 
-        private static Pair[] Deltas = new Pair[]
-        {
-                new Pair { X = -2, Y = -1},
-                new Pair { X = -2, Y =  1},
-                new Pair { X = -1, Y = -2},
-                new Pair { X = -1, Y =  2},
-                new Pair { X =  1, Y = -2},
-                new Pair { X =  1, Y =  2},
-                new Pair { X =  2, Y = -1},
-                new Pair { X =  2, Y =  1}
-        };
-
         private static Pair MakePair(string s)
         {
             return new Pair { X = s[0] - 'a', Y = s[1] - '1' };
         }
 
-        private static int GetShortestPath(Pair from, Pair to)
+        private static int GetShortestPath(Pair from, Pair to, int[] steps)
         {
             int[,] depths = new int[CaptureThemAll.Size, CaptureThemAll.Size];
 
@@ -56,34 +46,27 @@ namespace TopCoder
             while (queue.Count > 0)
             {
                 Pair current = queue.Dequeue();
+
                 if (current.X == to.X && current.Y == to.Y)
                     return depths[current.X, current.Y];
 
-                foreach (Pair next in CaptureThemAll.EnumerateNextPairs(current))
+                for(int i = 0; i < steps.Length - 1; i++)
                 {
-                    if (depths[next.X, next.Y] > 0)
+                    int x = current.X + steps[i];
+                    int y = current.Y + steps[i + 1];
+
+                    if (x < 0 || x >= CaptureThemAll.Size || y < 0 || y >= CaptureThemAll.Size)
                         continue;
 
-                    depths[next.X, next.Y] = depths[current.X, current.Y] + 1;
-                    queue.Enqueue(next);
+                    if (depths[x, y] > 0)
+                        continue;
+
+                    depths[x, y] = depths[current.X, current.Y] + 1;
+                    queue.Enqueue(new Pair { X = x, Y = y });
                 }
             }
 
             return int.MaxValue;
-        }
-
-        private static IEnumerable<Pair> EnumerateNextPairs(Pair current)
-        {
-            foreach (Pair delta in CaptureThemAll.Deltas)
-            {
-                int x = current.X + delta.X;
-                int y = current.Y + delta.Y;
-
-                if (x < 0 || x >= CaptureThemAll.Size || y < 0 || y >= CaptureThemAll.Size)
-                    continue;
-
-                yield return new Pair { X = x, Y = y };
-            }
         }
     }
 
