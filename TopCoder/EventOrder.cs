@@ -23,13 +23,13 @@ namespace TopCoder
                     if(i < longEvents)
                     {
                         counts[i + 1, j] = EventOrder.Add(counts[i + 1, j], (long)counts[i, j] * j * (j - 1) / 2);
-                        counts[i + 1, j + 1] = EventOrder.Add(counts[i + 1, j + 1], counts[i, j] * (j + 1) * j);
-                        counts[i + 1, j + 2] = EventOrder.Add(counts[i + 1, j + 2], counts[i, j] * (j + 2) * (j + 1) / 2);
+                        counts[i + 1, j + 1] = EventOrder.Add(counts[i + 1, j + 1], (long)counts[i, j] * (j + 1) * j);
+                        counts[i + 1, j + 2] = EventOrder.Add(counts[i + 1, j + 2], (long)counts[i, j] * (j + 2) * (j + 1) / 2);
                     }
                     else
                     {
-                        counts[i + 1, j] = EventOrder.Add(counts[i + 1, j], counts[i, j] * j);
-                        counts[i + 1, j + 1] = EventOrder.Add(counts[i + 1, j + 1], counts[i, j] * (j + 1));
+                        counts[i + 1, j] = EventOrder.Add(counts[i + 1, j], (long)counts[i, j] * j);
+                        counts[i + 1, j + 1] = EventOrder.Add(counts[i + 1, j + 1], (long)counts[i, j] * (j + 1));
                     }
                 }
             }
