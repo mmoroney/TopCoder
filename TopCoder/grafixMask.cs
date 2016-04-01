@@ -27,6 +27,7 @@ namespace TopCoder
             }
 
             List<int> areas = new List<int>();
+            int[] steps = new int[] { 0, 1, 0, -1, 0 };
 
             for (int i = 0; i < marked.GetLength(0); i++)
             {
@@ -45,10 +46,10 @@ namespace TopCoder
                         Point current = queue.Dequeue();
                         area++;
 
-                        foreach (Point delta in grafixMask.Deltas)
+                        for(int k = 0; k < steps.Length - 1; k++)
                         {
-                            int x = current.X + delta.X;
-                            int y = current.Y + delta.Y;
+                            int x = current.X + steps[k];
+                            int y = current.Y + steps[k + 1];
 
                             if (x < 0 || x >= marked.GetLength(0) || y < 0 || y >= marked.GetLength(1))
                                 continue;
@@ -74,14 +75,6 @@ namespace TopCoder
             public int X { get; set; }
             public int Y { get; set; }
         }
-
-        private static Point[] Deltas = new Point[]
-        {
-            new Point { X = 1, Y = 0 },
-            new Point { X = 0, Y = 1 },
-            new Point { X = -1, Y = 0 },
-            new Point { X = 0, Y = -1 },
-        };
     }
 
     [TestClass]
