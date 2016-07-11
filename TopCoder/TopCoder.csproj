@@ -58,6 +58,7 @@
     <Compile Include="ArithmeticProgression.cs" />
     <Compile Include="ArtShift.cs" />
     <Compile Include="ATaleOfThreeCities.cs" />
+    <Compile Include="BagOfHolding.cs" />
     <Compile Include="BaseMystery.cs" />
     <Compile Include="BigFatInteger2.cs" />
     <Compile Include="BitFlipper.cs" />
