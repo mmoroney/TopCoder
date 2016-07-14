@@ -1,6 +1,7 @@
 ﻿// https://community.topcoder.com/stat?c=problem_statement&pm=2348
 
 using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TopCoder
@@ -9,14 +10,7 @@ namespace TopCoder
     {
         public double oddsReachable(int[] sizes, int item)
         {
-            int count = 0;
-            foreach(int size in sizes)
-            {
-                if (size >= sizes[item])
-                    count++;
-            }
-
-            return 1.0 / count;
+            return 1.0 / sizes.Count(i => sizes[item] <= i);
         }
     }
 
