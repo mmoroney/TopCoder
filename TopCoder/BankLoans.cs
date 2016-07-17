@@ -30,7 +30,7 @@ namespace TopCoder
         public class BankLoansTestClass
         {
             [TestMethod]
-            public void ArithmeticProgressionTest()
+            public void BankLoansTest()
             {
                 BankLoansTestClass.BankLoansTest(
                     new string[] { "1000 100 a", "500 80 b", "600 120 c" },
