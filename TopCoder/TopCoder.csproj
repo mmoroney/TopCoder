@@ -61,6 +61,7 @@
     <Compile Include="BagOfHolding.cs" />
     <Compile Include="BankLoans.cs" />
     <Compile Include="BaseMystery.cs" />
+    <Compile Include="BifidSortMachine.cs" />
     <Compile Include="BigFatInteger2.cs" />
     <Compile Include="BitFlipper.cs" />
     <Compile Include="BridgeCrossing.cs" />
